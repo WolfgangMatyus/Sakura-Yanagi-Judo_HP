@@ -1,18 +1,35 @@
 function build(){
-    //loadHead();
+    loadBanner();
+    loadNavbar();
     loadBody();
-    //loadFooter()
+    loadFooter()
 }
 
 
-function loadHead() {
+function loadBanner() {
 
     $.ajax({
-        url: '../component/head.html',
+        url: '../component/banner.html',
         type: 'GET',
         dataType: 'html',
         success: function(data) {
-          $('#html').html(data);
+          $('#banner').html(data);
+        },
+        error: function() {
+          //alert('Fehler beim Laden der Datei.');
+          window.location.href = 'error.html';
+        }
+      });
+}
+
+function loadNavbar() {
+
+    $.ajax({
+        url: '../component/navbar.html',
+        type: 'GET',
+        dataType: 'html',
+        success: function(data) {
+          $('#navbar').html(data);
         },
         error: function() {
           //alert('Fehler beim Laden der Datei.');
@@ -51,4 +68,13 @@ function loadFooter() {
           window.location.href = 'error.html';
         }
       });
+}
+
+function navbar() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
