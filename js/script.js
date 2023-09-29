@@ -78,3 +78,16 @@ function navbar() {
     x.className = "topnav";
   }
 }
+
+
+var banner = $('#banner');
+var bannerHeight = banner.outerHeight(); // Höhe des ursprünglichen Banners
+var shrinkHeight = bannerHeight * 0.5; // Höhe nach der Verkleinerung (50%)
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > bannerHeight) {
+        banner.addClass('banner-shrink');
+    } else {
+        banner.removeClass('banner-shrink');
+    }
+});
