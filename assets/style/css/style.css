@@ -43,14 +43,16 @@ body {
     display: none;
   } 
 
+.sakura_yanagi_logo {
+    background-image: url('/assets/img/0.jpg');
+}
+
 .sakura_blossom_image {
-    background-image: url('/assets/img/cherry_blossom_qadrat.PNG'); /* Pfad zum Hintergrundbild */
-    margin-left: 10px; 
+    background-image: url('/assets/img/cherry_blossom_qadrat.PNG'); /* Pfad zum Hintergrundbild */ 
 }
 
 .yanagi_blossom_image {
-    background-image: url('/assets/img/willow_blossom_quadrat.png'); /* Pfad zum Hintergrundbild */
-    margin-right: 10px; 
+    background-image: url('/assets/img/willow_blossom_quadrat.png'); /* Pfad zum Hintergrundbild */ 
 }
 
 .yanagi_blossom_image, .sakura_blossom_image {
