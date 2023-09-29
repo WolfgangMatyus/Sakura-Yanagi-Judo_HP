@@ -72,7 +72,13 @@ body {
 
 
 .content {
-    height: 100vh
+    /*height: 100vh*/
+    
+}
+
+.adresse, .contact, .tr_ort, .tr_zeit {
+    min-width: 327.75 !important;
+    margin: 10px; 
 }
 
 /* Stil für den Footer */
