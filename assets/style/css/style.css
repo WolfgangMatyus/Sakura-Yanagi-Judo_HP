@@ -46,6 +46,10 @@
 height: 100%;
 }
 
+.footer-spacer {
+    width: 100%;
+    padding: 5vh;
+}
 
 #footer {
     background-color: #333;
@@ -64,4 +68,10 @@ footer a {
     margin: 0 10px;
 }
 
+.wggg {
+    background: #372304;
+}
 
+.card-img {
+    padding: 5px;
+}
