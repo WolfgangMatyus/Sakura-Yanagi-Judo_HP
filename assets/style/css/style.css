@@ -46,6 +46,10 @@
 height: 100%;
 }
 
+#content {
+    margin-top: 5px;
+}
+
 .footer-spacer {
     width: 100%;
     padding: 5vh;
