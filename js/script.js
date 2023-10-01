@@ -2,9 +2,25 @@ function build(){
     loadBanner();
     loadNavbar();
     loadBody();
-    loadFooter()
+    loadFooter();
 }
 
+function loadContent(target) {
+    
+    $.ajax({
+        url: '../component/content/' + target + '.html',
+        type: 'GET',
+        dataType: 'html',
+        success: function(data) {
+          $('#content').html(data);
+        },
+        error: function() {
+          //alert('Fehler beim Laden der Datei.');
+          window.location.href = 'error.html';
+        }
+      });
+
+}
 
 function loadBanner() {
 
@@ -45,7 +61,7 @@ function loadBody() {
         type: 'GET',
         dataType: 'html',
         success: function(data) {
-          $('#content').html(data);
+          $('#subbody').html(data);
         },
         error: function() {
           //alert('Fehler beim Laden der Datei.');
@@ -78,16 +94,3 @@ function navbar() {
     x.className = "topnav";
   }
 }
-
-
-var banner = $('#banner');
-var bannerHeight = banner.outerHeight(); // Höhe des ursprünglichen Banners
-var shrinkHeight = bannerHeight * 0.5; // Höhe nach der Verkleinerung (50%)
-
-$(window).scroll(function() {
-    if ($(this).scrollTop() > bannerHeight) {
-        banner.addClass('banner-shrink');
-    } else {
-        banner.removeClass('banner-shrink');
-    }
-});

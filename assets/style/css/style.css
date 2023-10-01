@@ -1,47 +1,15 @@
-body {
-
+.hd {
+    font-weight: bold;
 }
 
-#navbar {
-    text-align: center;
+#ferien {
+    padding: 0px;
+    margin: 0px;
 }
 
- /* Add a black background color to the top navigation */
- .topnav {
-    background-color: #333;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #1d04aa;
-    color: white;
-    font-size: large;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #1d04aa;
-    color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  } 
+.nav-link :hover {
+    cursor: pointer;
+}
 
 .sakura_yanagi_logo {
     background-image: url('/assets/img/0.jpg');
@@ -70,18 +38,15 @@ body {
     margin: 10px;
 }
 
-
-.content {
-    /*height: 100vh*/
-    
-}
-
 .adresse, .contact, .tr_ort, .tr_zeit {
-    min-width: 327.75 !important;
-    margin: 10px; 
+    margin: 5px; 
 }
 
-/* Stil für den Footer */
+#body {
+height: 100%;
+}
+
+
 #footer {
     background-color: #333;
     color: white;
@@ -89,7 +54,7 @@ body {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width:100%;
 }
 
 /* Stil für Footer-Links */
@@ -99,11 +64,4 @@ footer a {
     margin: 0 10px;
 }
 
-#banner {
-    transition: all 0.3s ease; /* Übergangseffekt für die Größenänderung */
-}
-
-.banner-shrink {
-    transform: scale(0.5); /* Verkleinern um 50% */
-}
 
