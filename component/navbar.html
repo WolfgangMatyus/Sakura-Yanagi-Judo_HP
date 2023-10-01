@@ -1,41 +1,42 @@
-<!--
-<a class="active" href="#news">Neues</a>
-<a href="#events">Termine</a>
-<a href="#pictures">Bilder</a>
-<a href="#about">Über uns</a>
-<a href="#judo">Was ist Judo?</a>
-<a href="#Members">Mitglieder</a>
--->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <!--<div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="/assets/img/sakura-yanagi-judo_logo.jpg" alt="Bootstrap" width="100" height="100">
-            </a>
-        </div> -->
+        <!--        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/img/sakura-yanagi-judo_logo.jpg" alt="Bootstrap" width="100" height="100">
+          </a>
+      </div> -->
         <a class="navbar-brand" href="/index.html">UJC Sakura Yanagi Judo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" onclick="loadContent('neues')">Neues</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" onclick="loadContent('termine')">Termine</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Über uns
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" onclick="loadContent('trainer')">Unsere Trainer</a></li>
+              <li><a class="dropdown-item" onclick="loadContent('geschichte')">Vereinsgeschichte</a></li>
+              <li><a class="dropdown-item" onclick="loadContent('philosophie')">Clubphilosophie</a></li>
+            </ul>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" onclick="loadContent('judo')">Was ist Judo?</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" onclick="loadContent('bilder')">Bilder</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Über uns</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" onclick="loadContent('members')">Mitglieder</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="loadContent('judo')">Was ist Judo?</a>
           </li>
         </ul>
       </div>
