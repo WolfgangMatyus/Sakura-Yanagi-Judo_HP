@@ -28,8 +28,8 @@
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.7;
-    max-width: 70%;
-    width: 70%; /* Setze die gewünschte Breite */
+    max-width: 100%;
+    width: 100%; /* Setze die gewünschte Breite */
     height: 100%; /* Setze die gewünschte Höhe */
 }
 
