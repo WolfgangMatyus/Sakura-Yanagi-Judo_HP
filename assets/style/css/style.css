@@ -96,6 +96,7 @@ height: 100%;
 /* Stil für Footer-Links */
 footer a {
     color: white;
+    cursor: pointer;
     text-decoration: none;
     margin: 0 10px;
 }
