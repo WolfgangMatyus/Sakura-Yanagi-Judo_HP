@@ -6,3 +6,10 @@ TODO:
 - Header collaps
 - Table Scroll side
 - Neue Trainerfotos
+
+
+- Mitgliederverwaltung
+- Login
+- Registraion
+- Userfoto
+- persönliche Bildergallerie
