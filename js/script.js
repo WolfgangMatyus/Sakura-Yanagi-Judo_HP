@@ -91,3 +91,7 @@ function e() {
   var offcanvas = new bootstrap.Offcanvas(document.getElementById('staticBackdrop'));
   offcanvas.toggle();
 };
+
+function sendResetPasswordEmail() {
+  alert("EMAIL GESENDET")
+}
