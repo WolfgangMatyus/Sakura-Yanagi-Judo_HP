@@ -12,37 +12,53 @@
       <div class="collapse navbar-collapse" id="navbarToggler">
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" onclick="loadContent('neues')">Neues</a>
+          <li class="nav-item" id="neues">
+            <a class="nav-link active" aria-current="page" onclick="loadContent('neues')">
+              Neues
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="loadContent('termine')">Termine</a>
+          <li class="nav-item" id="termine">
+            <a class="nav-link" onclick="loadContent('termine')">
+              Termine
+            </a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" id="ueberuns">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Über uns
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" onclick="loadContent('trainer')">Unsere Trainer</a></li>
-              <li><a class="dropdown-item" onclick="loadContent('geschichte')">Vereinsgeschichte</a></li>
-              <li><a class="dropdown-item" onclick="loadContent('philosophie')">Clubphilosophie</a></li>
+              <li class="nav-item" id="trainer"><a class="dropdown-item" onclick="loadContent('trainer')">Unsere Trainer</a></li>
+              <li class="nav-item" id="geschichte"><a class="dropdown-item" onclick="loadContent('geschichte')">Vereinsgeschichte</a></li>
+              <li class="nav-item" id="philosophie"><a class="dropdown-item" onclick="loadContent('philosophie')">Clubphilosophie</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="toggleOffcanvas" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" >
+          <li class="nav-item" id="wasistjudo">
+            <a class="nav-link" aria-current="page" onclick="loadContent('wasistjudo')">
               Was ist Judo?
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/component/offcanvasnav.html">Bilder</a>
-          </li>
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Mitglieder
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" onclick="loadContent('login')">Anmelden</a></li>
-              <li><a class="dropdown-item" onclick="loadContent('registration')">Registrieren</a></li>
+              <li class="nav-item" id="login"><a class="dropdown-item" onclick="loadContent('login')">
+                Anmelden
+              </a></li>
+              <li class="nav-item" id="registration"><a class="dropdown-item" onclick="loadContent('registration')">
+                Registrieren
+              </a></li>
             </ul>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link" href="#" id="toggleOffcanvas1" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+              Bilder
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="loadContent('video')">
+              Video
+            </a>
           </li>
         </ul>
       </div>
