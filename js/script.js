@@ -13,6 +13,8 @@ function loadContent(target) {
         dataType: 'html',
         success: function(data) {
           $('#content').html(data);
+          console.log($('button.navbar-toggler'))
+          //.add('collapsed')
           changeActive(target);
         },
         error: function() {
@@ -93,13 +95,18 @@ function e() {
 }
 
 function sendResetPasswordEmail() {
-  alert("EMAIL GESENDET")
+  alert("EMAIL GESENDET");
 }
 
 function changeActive(target){
-  //console.log(target);
-  active = document.getElementById("navbar-nav")
-  console.log(active);
+  var navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach(function(link) {
+    link.classList.remove("active");
+  });
+
+  var linkElement = document.getElementById(""+target+"");
+    var link = linkElement.querySelector("a");
+      link.classList.add("active");
 }
 
 window.addEventListener("scroll", function() {
