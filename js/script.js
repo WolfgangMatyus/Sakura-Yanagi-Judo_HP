@@ -13,8 +13,6 @@ function loadContent(target) {
         dataType: 'html',
         success: function(data) {
           $('#content').html(data);
-          console.log($('button.navbar-toggler'))
-          //.add('collapsed')
           changeActive(target);
         },
         error: function() {
@@ -109,18 +107,7 @@ function changeActive(target){
       link.classList.add("active");
 }
 
-window.addEventListener("scroll", function() {
-  var header = document.querySelector("header");
-  if (window.scrollY > 10) {
-    header.classList.add("header-collapsed"); // Füge die CSS-Klasse für den verkleinerten Header hinzu
-  } else {
-    header.classList.remove("header-collapsed"); // Entferne die CSS-Klasse, um den Header zurückzusetzen
-  }
-});
-
-
 /* ---- SLIDESHOW-GALLERY ---- */
-
 
 let slideIndex = 1;
 showSlides(slideIndex);
