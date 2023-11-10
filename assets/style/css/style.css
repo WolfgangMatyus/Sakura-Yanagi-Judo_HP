@@ -1,7 +1,30 @@
+h1 {
+    
+}
 
+#banner {
+    background-image: url(/assets/img/1880.jpg);
+}
+
+#subbody{
+    background-image: url(/assets/img/1880.jpg);
+}
+
+#flip_img {
+    display: flex;
+    margin-top: 10px;
+}
+
+#card-plakat {
+    background-image: url(/assets/img/JUDO_Plakat_2023.png)
+}
 
 .hd, .card_hd {
     font-weight: bold;
+}
+
+.footnote {
+    font-size: xx-small;
 }
 
 .card_hd{
@@ -15,6 +38,13 @@
 .odd {
     font-size: small;
     background-color: rgb(240, 242, 243);
+    border-top: 0.01px solid #e7e6e6;
+    border-bottom: 0.01px solid #e7e6e6;
+}
+
+.even {
+    font-size: small;
+    background-color: snow;
     border-top: 0.01px solid #e7e6e6;
     border-bottom: 0.01px solid #e7e6e6;
 }
@@ -124,98 +154,9 @@ footer a {
 
 
 
-
-/* ---- RESPOSIVE MEDIA QUERYS --- */
-
-/* For mobile phones: */
-.col-m-1 {
-    width: 100%;
-}
-.seperator{
-    display: none;
-}
-.order1 {
-    order: 2;
-}
-.order2 {
-    order: 1;
-}
-.order3 {
-    order: 3;
-}
-
-
-@media only screen and (min-width: 950px) {
-    .seperator{
-        display: flex;
-    }
-    #footerLinkBlock1 {
-        text-align: right;
-    }
-    #footerLinkBlock2 {
-        text-align: left;
-    }
-    .odd, .card_hd {
-        font-size: medium;
-    }
-    /* For desktop: */
-    .col-0 {width: 0%;
-        padding:0%;
-        margin: 0%;}
-    .col-t-1 {width: 50%;}
-    .col-t-2 {width: 100%;}
-
-    .order1 {
-        order: 2;
-    }
-    .order2 {
-        order: 1;
-    }
-    .order3 {
-        order: 3;
-    }
-  }
-
- /* For desktop: */
-@media only screen and (min-width: 1290px) {
-    .seperator{
-        display: flex;
-    }
-
-
-    .col-0 {width: 0%;
-            padding:0%;
-            margin: 0%;}
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
-    .order1 {
-        order: 1;
-    }
-    .order2 {
-        order: 2;
-    }
-    
-    .order3 {
-        order: 3;
-    } 
-  }
-
-  /* ---- RESPOSIVE MEDIA QUERYS ---- ENDE --- */
-
   /* ---- SLIDESHOW-GALLERY ---- */
 
-* {
+  * {
     box-sizing: border-box;
   }
   
@@ -303,3 +244,97 @@ footer a {
   }
 
   /* ---- SLIDESHOW-GALLERY ---- ENDE ---- */
+
+
+/* ---- RESPOSIVE MEDIA QUERYS --- */
+
+/* For mobile phones: */
+.col-m-1 {
+    width: 100%;
+}
+.seperator{
+    display: none;
+}
+.order1 {
+    order: 2;
+}
+.order2 {
+    order: 1;
+}
+.order3 {
+    order: 3;
+}
+
+@media only screen and (min-width: 480px) {
+    #flip_img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .seperator{
+        display: flex;
+    }
+
+    #footerLinkBlock1 {
+        text-align: right;
+    }
+    #footerLinkBlock2 {
+        text-align: left;
+    }
+    .odd, .card_hd {
+        font-size: medium;
+    }
+    /* For desktop: */
+    .col-0 {width: 0%;
+        padding:0%;
+        margin: 0%;}
+    
+    .col-t-1 {width: 50%;}
+    .col-t-2 {width: 100%;}
+    .order1 {
+        order: 2;
+    }
+    .order2 {
+        order: 1;
+    }
+    .order3 {
+        order: 3;
+    }
+  }
+
+ /* For desktop: */
+@media only screen and (min-width: 1400px) {
+    .seperator{
+        display: flex;
+    }
+
+    .col-0 {width: 0%;
+            padding:0%;
+            margin: 0%;}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .order1 {
+        order: 1;
+    }
+    .order2 {
+        order: 2;
+    }
+    
+    .order3 {
+        order: 3;
+    } 
+  }
+
+  /* ---- RESPOSIVE MEDIA QUERYS ---- ENDE --- */

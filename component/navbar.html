@@ -28,13 +28,13 @@
             </a>
           </li>
           <li class="nav-item dropdown" id="ueberuns">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="changeActive('ueberuns')">
               Über uns
             </a>
-            <ul class="dropdown-menu">
-              <li class="nav-item" id="trainer"><a class="dropdown-item" onclick="loadContent('trainer')">Unsere Trainer</a></li>
-              <li class="nav-item" id="philosophie"><a class="dropdown-item" onclick="loadContent('philosophie')">Clubphilosophie</a></li>
-              <li class="nav-item" id="geschichte"><a class="dropdown-item" onclick="loadContent('geschichte')">Vereinsgeschichte</a></li>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li class="dropdown-item" id="trainer"><a class="nav-link" onclick="loadContent('trainer')">Unsere Trainer</a></li>
+              <li class="dropdown-item" id="philosophie"><a class="nav-link" onclick="loadContent('philosophie')">Clubphilosophie</a></li>
+              <li class="dropdown-item" id="geschichte"><a class="nav-link" onclick="loadContent('geschichte')">Vereinsgeschichte</a></li>
             </ul>
           </li>
           
@@ -42,11 +42,15 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Mitglieder
             </a>
-            <ul class="dropdown-menu">
-              <li class="nav-item" id="login"><a class="dropdown-item" onclick="loadContent('login')">
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li class="dropdown-item" id="login"><a class="nav-link" onclick="loadContent('login')">
                 Anmelden
               </a></li>
-              <li class="nav-item" id="registration"><a class="dropdown-item" onclick="loadContent('registration')">
+              <hr>
+              <li class="dropdown-item" id="mitgliedsbeitrag"><a class="nav-link" onclick="loadContent('mitgliedsbeitrag')">
+                Mitgliedsbeitrag
+              </a></li>
+              <li class="dropdown-item" id="registration"><a class="nav-link" onclick="loadContent('registration')">
                 Registrieren
               </a></li>
             </ul>

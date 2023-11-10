@@ -14,6 +14,7 @@ function loadContent(target) {
         success: function(data) {
           $('#content').html(data);
           changeActive(target);
+          removeShowNavToggler();
         },
         error: function() {
           //alert('Fehler beim Laden der Datei.');
@@ -97,15 +98,20 @@ function sendResetPasswordEmail() {
 }
 
 function changeActive(target){
-  var navLinks = document.querySelectorAll(".nav-link");
-  navLinks.forEach(function(link) {
-    link.classList.remove("active");
-  });
-
+  
   var linkElement = document.getElementById(""+target+"");
     var link = linkElement.querySelector("a");
-      link.classList.add("active");
+    
+    var navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(function(link) {
+      link.classList.remove("active");
+    });
+    
+    link.classList.add("active");
 }
+function removeShowNavToggler() {
+   $("#navbarToggler").removeClass("show")
+};
 
 /* ---- SLIDESHOW-GALLERY ---- */
 
