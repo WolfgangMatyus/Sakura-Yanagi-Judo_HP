@@ -1,11 +1,13 @@
 
 #banner {
     background-image: url(/assets/img/1880.jpg);
+    width: 100%;
 }
 
 #subbody{
+    margin-top: px;
     background-image: url(/assets/img/1880.jpg);
-    width: 100%;
+
 }
 
 #flip_img {
@@ -289,7 +291,7 @@ footer a {
         margin: 0%;}
     
     .col-t-1 {width: 50%;}
-    .col-t-2 {width: 100%;}
+    .col-t-2 {width: 50%;}
     .order1 {
         order: 2;
     }
@@ -297,7 +299,7 @@ footer a {
         order: 1;
     }
     .order3 {
-        order: 3;
+        order: 2;
     }
   }
 
