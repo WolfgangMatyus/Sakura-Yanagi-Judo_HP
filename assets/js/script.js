@@ -15,6 +15,7 @@ function loadContent(target) {
           $('#content').html(data);
           changeActive(target);
           removeShowNavToggler();
+          pathEncryption();
         },
         error: function() {
           //alert('Fehler beim Laden der Datei.');
@@ -147,3 +148,31 @@ function showSlides(n) {
 }
 
 /* ---- SLIDESHOW-GALLERY ---- ENDE ---- */
+
+/* ---- PFADVERSCHLÜSSELUNG ----- */
+function pathEncryption(){
+  var originalPath = "/assets/img/flipdisplay.png";
+
+  // Funktion für die Verschlüsselung
+  function encryptPath(path) {
+      // Hier können Sie Ihren eigenen Algorithmus implementieren
+      // Zum Beispiel: Einfache Umkehrung der Zeichenfolge
+      return path.split('').reverse().join('');
+  }
+
+  // Den verschlüsselten Pfad in das Attribut "src" des Elements einfügen
+  var encryptedPath = encryptPath(originalPath);
+  document.getElementById("flip_img").setAttribute("src", encryptedPath);
+
+  // Optional: Entschlüsseln des Pfads (nicht sicher, nur als Beispiel)
+  function decryptPath(encryptedPath) {
+    return encryptedPath.split('').reverse().join('');
+}
+
+  // Beispiel für die Verwendung der Entschlüsselungsfunktion
+  var decryptedPath = decryptPath(encryptedPath);
+  console.log("Decrypted Path:", decryptedPath);
+}
+
+
+/* ---- PFADVERSCHLÜSSELUNG ---- ENDE ----- */
