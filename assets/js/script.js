@@ -15,7 +15,6 @@ function loadContent(target) {
           $('#content').html(data);
           changeActive(target);
           removeShowNavToggler();
-          pathEncryption();
         },
         error: function() {
           //alert('Fehler beim Laden der Datei.');
