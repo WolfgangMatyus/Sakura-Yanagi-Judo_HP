@@ -126,6 +126,74 @@
     max-height: 100%;
 }
 
+label{
+    color: black;
+    font-size: large;
+}
+
+#label2{
+    color: aliceblue;
+    font-size: large;
+}
+
+.kyu_vid{
+    margin-bottom: 2rem;
+}
+
+#Kyu11_color{
+    background-color: aliceblue;
+
+}
+
+#Kyu10_color{
+    background-image: linear-gradient(to top,  yellow 0%, white 70%);
+
+}
+
+#Kyu9_color{
+    background-color: yellow;
+
+}
+
+#Kyu8_color{
+    background-image: linear-gradient(to top,  orange 0%, yellow 70%);
+
+}
+
+#Kyu7_color{
+    background-color: orange;
+
+}
+
+#Kyu6_color{
+    background-image: linear-gradient(to top,  green 0%, orange 70%);
+
+}
+
+#Kyu5_color{
+    background-color: green;
+
+}
+
+#Kyu4_color{
+    background-image: linear-gradient(to top,  darkblue 0%, green 70%);
+
+}
+
+#Kyu3_color{
+    background-color: darkblue;
+
+}
+
+#Kyu2_color{
+    background-image: linear-gradient(to top,  rgb(82, 22, 22) 0%, darkblue 70%);
+
+}
+
+#Kyu1_color{
+    background-color: rgb(82, 22, 22);
+}
+
 .offcanvas.offcanvas-start {
     width: 200px;
 }
