@@ -25,6 +25,20 @@ function removeShowNavToggler() {
    $("#navbarToggler").removeClass("show")
 };
 
+function adjustTableDisplay() {
+  var screenWidth = window.innerWidth;
+
+  // Je nach Bildschirmbreite die Klassen hinzufügen oder entfernen
+  if (screenWidth > 1050) {
+    document.getElementById('eventList').classList.add('hidden');
+    document.getElementById('eventTable').classList.remove('hidden');
+  } else {
+    document.getElementById('eventList').classList.remove('hidden');
+    document.getElementById('eventTable').classList.add('hidden');
+  }
+}
+
+
 /* ---- SLIDESHOW-GALLERY ---- 
 
 let slideIndex = 1;

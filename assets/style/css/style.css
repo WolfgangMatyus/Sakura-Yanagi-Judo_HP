@@ -1,23 +1,27 @@
 
 #banner {
     background-image: url(/assets/img/1880.jpg);
-    width: 100%;
+    width: 101.5%;
 }
 
-#subbody{
-    margin-top: px;
-    background-image: url(/assets/img/1880.jpg);
+.hidden {
+    display: none;
+  }
 
-}
+.header-row {
+    background-color: #333; 
+    color: #fff; 
+  }
+  
+.even-row {
+    background-color: #f2f2f2; 
+  }
 
-#flip_img {
-    display: flex;
-    margin-top: 10px;
-}
+  .odd-row {
+    background-color: #fff; 
+  }
 
-#card-plakat {
-    background-image: url(/assets/img/JUDO_Plakat_2023.png)
-}
+
 
 .hd, .card_hd {
     font-weight: bold;
@@ -44,17 +48,9 @@
 
 .even {
     padding: 0.5rem;
-    background-color: snow;
+    background-color: #fff;
     border-top: 0.01px solid #e7e6e6;
     border-bottom: 0.01px solid #e7e6e6;
-}
-
-.alert-primary {
-    min-width: 300px;
-}
-
-.alert-warning {
-    min-width: 400px
 }
 
 #ferien {
@@ -96,6 +92,7 @@
 
 #content {
     margin-top: 5px;
+    max-width: 100%;
 }
 
 .wrgg {
@@ -334,12 +331,13 @@ footer a {
 }
 
 @media only screen and (min-width: 480px) {
-    #flip_img {
-        display: none;
-    }
+
 }
 
+
 @media only screen and (min-width: 1050px) {
+    
+
     .seperator{
         display: flex;
     }

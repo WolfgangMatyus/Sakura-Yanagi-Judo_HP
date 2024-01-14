@@ -6,19 +6,26 @@
 <div>
   <form>
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email Adress</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <label for="Username" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="Username" aria-describedby="emailHelp">
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Passwort</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="Password" class="form-label">Passwort:</label>
+      <input type="password" class="form-control" id="Password">
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Anmeldedaten merken?</label>
-    </div>
-    <div>
-        <a onclick="sendResetPasswordEmail('login')">Passwort vergessen?</a>
-    </div>
-    <button type="submit" class="btn btn-primary">Anmelden</button>
+<div class="row">
+  
+  <div class="col form-check">
+    <label for="exampleCheck1" class="form-check-label" >Anmeldedaten merken?</label>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    
+  </div>
+  <div class="col text-end">
+    <a onclick="sendResetPasswordEmail('login')">Passwort vergessen?</a>
+  </div>
+
+</div>
+    
+    
+    <button type="submit" onclick="login()" class="btn btn-primary">Anmelden</button>
   </form>
 </div>
