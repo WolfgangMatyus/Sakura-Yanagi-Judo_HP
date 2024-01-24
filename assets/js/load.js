@@ -174,11 +174,22 @@ function createListContainer(eventData) {
         li.setAttribute('class', 'list-group-item');
 
         var listItemContent = `
-            <strong>Datum:</strong> ${formattedDate}<br>
-            <strong>Zeit:</strong> ${formattedTime}<br>
-            <strong>Veranstaltung:</strong> ${event.event}<br>
-            <strong>Ort:</strong> ${event.place}`;
-
+                <div class="row">
+                    <div class="col"><strong>Datum:</strong></div>
+                    <div class="col"> ${formattedDate}<br></div>
+                </div>
+                <div class="row">
+                    <div class="col"><strong>Zeit:</strong></div>
+                    <div class="col">${formattedTime}<br></div>
+                </div>
+                <div class="row">
+                    <div class="col"><strong>Veranstaltung:</strong></div>
+                    <div class="col">${event.event}<br></div>
+                </div>
+                <div class="row">
+                    <div class="col"><strong>Ort:</strong></div>
+                    <div class="col">${event.place}</div>
+                </div>`;
         li.innerHTML = listItemContent;
 
         ul.appendChild(li);
