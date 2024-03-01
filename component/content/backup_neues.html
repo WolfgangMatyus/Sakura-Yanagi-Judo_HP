@@ -1,0 +1,114 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-3">
+        <h1>Neues:</h1>
+      </div>
+      <div class="col">
+        <a type="button" class="btn btn-dark" onclick="loadContent('mitgliedsbeitrag')">Zur Mitgliederanmeldung</a>
+      </div>
+    </div>
+      
+  </div>
+  
+  <hr>
+  <div class="col">
+    <h3>aktuelle Termine:</h3>
+  </div>
+  <div id="newsContent"></div>
+  
+  <hr>
+  <div class="col">
+    <h3>Events:</h3>
+  </div>
+  <div class="card">
+      <div class="card-header"><h4>Schnuppertraining:</h4></div>
+      <div class="card-body">
+        <div class="card_table">
+          <div class="row card_hd">
+            <div class="col-3">Datum</div>
+            <div class="col-2">Zeit</div>
+            <div class="col-4">Veranstaltung</div>
+            <div class="col-3">Ort</div>
+          </div>
+          <div class="row odd">
+            <div class="col-3">23. Feb. 2024</div>
+            <div class="col-2">17:00</div>
+            <div class="col-4">Schnuppertraining</div>
+            <div class="col-3">Fitnesscenter Gerersdorf</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card-footer">
+  
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">
+          Details
+      </button>
+  
+      <div class="modal" id="myModal">
+  
+      </div>
+  
+      </div>
+  
+    </div>
+  
+  <hr>
+  
+  <div class="card">
+    <div class="card-header"><h4>Eltern-Kinder-Judo Schnuppertraining:</h4></div>
+    <div class="card-body">
+      <div class="card_table">
+        <div class="row card_hd">
+          <div class="col-3">Datum</div>
+          <div class="col-2">Zeit</div>
+          <div class="col-4">Veranstaltung</div>
+          <div class="col-3">Ort</div>
+        </div>
+        <div class="row odd">
+          <div class="col-3">01. März 2024</div>
+          <div class="col-2">17:00</div>
+          <div class="col-4">Schnuppertraining</div>
+          <div class="col-3">Fitnesscenter Gerersdorf</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card-footer">
+  
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">
+        Details
+    </button>
+  
+    <div class="modal" id="myModal">
+      
+    </div>
+  
+    </div>
+  
+  </div>
+  
+  <hr>
+  <div class="col">
+    <h3>Werbung:</h3>
+  </div>
+  <div class="card">
+    <div class="card-header"><h4>Plakatwerbung</h4></div>
+    <div class="card-body img-fluid justify-content-center" id="card-plakat">
+      <img src="/assets/img/JUDO_Plakat_2023.png" class="rounded" alt="JUDO Plakat 2023" class="responsive" style="width: 350px; height: 500px;"> 
+    </div>
+  
+    <div class="card-footer">
+  
+        <a type="button" class="btn btn-dark" href="/assets/pdf/JUDO_Plakat 2023.pdf">Download</a>
+  
+    </div>
+  
+  </div>
+  
+  <script>
+  loadModal('modal');
+  </script>
+  
