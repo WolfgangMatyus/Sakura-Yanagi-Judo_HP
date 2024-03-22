@@ -3,7 +3,7 @@
 </div>
 <hr>
 <div>
-<form method="post" action="send_form_email.php">
+<form id="registrationForm" method="post" action="">
   <div id="emailHelp" class="form-text">
     <h3>Persönliche Daten:</h3>
   </div>
@@ -18,53 +18,6 @@
         <input type="text" class="form-control" placeholder="" id="Familienname">
       </div>
     </div>
-  </div>
-  
-
-  <div class="mb-3">
-    <label for="Strasse" class="form-label">Strasse:</label>
-    <input type="text" class="form-control" placeholder="z.B: Musterstrasse 1" id="Strasse">
-  </div>
-
-  <div class="mb-3">
-    <div class="row">
-      <div class="col-4">
-        <label for="Postleitzahl" class="form-label">Postleitzahl:</label>
-        <input type="text" class="form-control" placeholder="z.B: 3443" id="Postleitzahl">
-      </div>
-      <div class="col-8">
-        <label for="Wohnort" class="form-label">Wohnort:</label>
-        <input type="text" class="form-control" placeholder="z.B: Sieghartskirchen" id="Wohnort">
-      </div>
-    </div>
-  </div>
-  
-  <div class="mb-3">
-    <div class="row">
-      <div class="col-4">
-        <label for="GeborenAm" class="form-label">Geboren am:</label>
-        <input type="date" class="form-control" id="GeborenAm">
-      </div>
-      <div class="col-8">
-        <label for="Telefon" class="form-label">Telefon:</label>
-        <input type="tel" class="form-control" placeholder="z.B: +43 2274 1234" id="Telefon">
-      </div>
-    </div>
-  </div>
-
-  <div class="mb-3">
-    <label for="Nationalität" class="form-label">Nationalität:</label>
-    <input type="text" class="form-control" placeholder="z.B: Österreich" id="Nationalität">
-  </div>
-
-  <div class="mb-3">
-    <label for="gesundheitlicheProbleme" class="form-label">Gesundheitliche Probleme:</label>
-    <input type="text" class="form-control" placeholder="z.B: Asthmatiker, Verletzungen, chronische Erkrankungen, ..." id="gesundheitlicheProbleme" aria-describedby="gesundheitHelp">
-    <div id="emailHelp" class="form-text">Bitte nur angeben wenn für Sport relevant!</div>
-  </div>
-
-  <div id="emailHelp" class="form-text">
-    <h3>Logindaten:</h3>
   </div>
 
   <div class="mb-3">
@@ -89,7 +42,8 @@
 
 
   <div>
-    <button type="submit" onclick="addNewUser()" class="btn btn-dark">Registieren</button>
+    <button type="button" onclick="addNewUser()" class="btn btn-dark">Registrieren</button>
+    <!-- <button type="submit" onclick="addNewUser()" class="btn btn-dark">Registieren</button> -->
   </div>
     
   </form>

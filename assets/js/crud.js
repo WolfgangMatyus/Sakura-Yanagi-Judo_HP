@@ -35,8 +35,6 @@ function getNewsList() {
         });
 }
 
-
-
 function addNewUser() {
 
     var formData = {
